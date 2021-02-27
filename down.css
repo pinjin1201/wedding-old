@@ -1,0 +1,424 @@
+/* 喜宴資訊 */
+.information{
+    text-align:center;
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color:#DB8F00;
+}
+/* 喜宴 標題 */
+.information>.title{
+    color:#fff;
+    font-size:2.3em;
+    font-family:'Coda Caption', sans-serif;
+    line-height:1.1em;
+    letter-spacing:7px;
+    margin-bottom:130px;
+}
+/* 喜宴 分隔線 */
+.information>.middleLine{
+    font-size:5em;
+    margin-top:130px;
+    margin-bottom:80px;
+}
+.information>.middleLine>.line{
+    border-right:3px solid #000;
+}
+.information>.info{
+    display:flex;
+    justify-content:center;
+}
+/* 喜宴 內文 */
+.information>.info>.word{
+    position:absolute;
+    top:2400px;
+}
+/* 喜宴 內文 (word) 上方間距調整 */
+@media(max-width:1000px){
+    .information>.info>.word{
+        top:2250px;
+    }
+}
+/* 喜宴 when */
+.information>.info>.when{
+    margin-right:500px;
+}
+/* 喜宴 where */
+.information>.info>.where{
+    margin-left:500px;
+}
+.information>.info>.word>.title{
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.information>.info>.word>.data{
+    font-size:0.8em;
+    line-height:1.3em;
+}
+/* 喜宴 RSVP */
+.information>.action>a:link{
+    color:#000;
+    text-decoration:none;
+    font-size:1.2em;
+    border:5px solid #000;
+    padding:10px 30px;
+    font-weight:bold;
+}
+.information>.action>a:visited{
+    color:#000;
+    text-decoration:none;
+    font-size:1.2em;
+    border:5px solid #000;
+    padding:10px 30px;
+    font-weight:bold;
+}
+.information>.action>a:hover{
+    background-color:rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+/* mobile size 喜宴資訊*/
+.mobile-size{
+    display:none;
+}
+.mobile-size>.mobile-size-infor{
+    width:100%;
+    text-align:center;
+}
+.mobile-information{
+    padding-bottom:100px;
+    background-color:#DB8F00;
+}
+.mobile-information>.mobile-title{
+    color:#fff;
+    font-size:2em;
+    font-family:'Coda Caption', sans-serif;
+    line-height:1.1em;
+    letter-spacing:7px;
+    margin-bottom:130px;
+}
+/* mobile size 喜宴 when */
+.mobile-infor>.mobile-when{
+    margin-bottom:80px;
+}
+.mobile-infor>.mobile-middleLine{
+    display:flex;
+    justify-content:center;
+}
+.mobile-infor>.mobile-middleLine>.m-l{
+    width:250px;height:3px;
+    background-color:#000;
+    margin-bottom:80px;
+}
+/* mobile size 喜宴 where */
+.mobile-infor>.mobile-where{
+    margin-bottom:80px;
+}
+.mobile-infor>.m-w>.mobile-title{
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.mobile-infor>.m-w>.mobile-data{
+    font-size:0.8em;
+    line-height:1.3em;
+}
+.mobile-information>.mobile-action>a:link{
+    color:#000;
+    text-decoration:none;
+    font-size:0.9em;
+    border:3px solid #000;
+    padding:8px 17px;
+    font-weight:bold;
+}
+.mobile-information>.mobile-action>a:visited{
+    color:#000;
+    text-decoration:none;
+    font-size:0.9em;
+    border:3px solid #000;
+    padding:8px 17px;
+    font-weight:bold;
+}
+.mobile-information>.mobile-action>a:hover{
+    background-color:rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+/* mobile size 喜宴資訊 顯示 */
+@media(max-width:800px){
+    #wedding{
+        display:none;
+    }
+    .mobile-size{
+        display:flex;
+    }
+}
+/* mobile size 喜宴文字 大小、上下間距調整 */
+@media(max-width:500px){
+    .mobile-information>.mobile-title{
+        font-size:1.8em;
+        margin-bottom:90px;
+    }
+    .mobile-infor>.mobile-middleLine>.m-l{
+        margin-bottom:40px;
+    }
+    .mobile-infor>.mobile-when{
+        margin-bottom:40px;
+    }
+}
+/* 婚紗店 */
+.studio{
+    width:100%;height:740px;
+    background-image:url("studio.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    opacity:0.5;
+    text-align:center;
+    color:#fff;
+    text-shadow:0px 0px 3px #0e2135;
+}
+/* 婚紗店 大標 */
+.studio>.bigTitle{
+    padding-top:100px;
+    font-size:2.5em;
+    font-family:'Coda Caption', sans-serif;
+    line-height:1.1em;
+    letter-spacing:6px;
+    margin-bottom:50px;
+}
+/* 婚紗店 次標題 */
+.studio>.title{
+    font-weight:bold;
+    letter-spacing:6px;
+    font-size:1.2em;
+    margin-bottom:30px;
+}
+/* 婚紗店 內文 */
+.studio>.text{
+    margin-bottom:50px;
+    line-height:1.5em;
+    font-size:0.9em;
+}
+/* 婚紗店 按鈕 */
+.studio>.action>a:link{
+    margin-bottom:40px;
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    font-size:1.3em;
+    letter-spacing:3px;
+}
+.studio>.action>a:visited{
+    color:#fff;
+    text-decoration:none;
+}
+.studio>.action>a:hover{
+    border:2px solid #fff;
+    padding:15px 40px;
+    cursor:pointer;
+}
+/* 婚紗店 字體大小 */
+@media(max-width:700px){
+    .studio>.bigTitle{
+        font-size:2em;
+    }
+    .studio>.title{
+        font-size:1em;
+    }
+    .studio>.text{
+        font-size:0.8em;
+        line-height:1.7em;
+    }
+}
+@media(max-width:450px){
+    .studio>.bigTitle{
+        font-size:1.8em;
+    }
+    .studio>.title{
+        font-size:0.9em;
+    }
+    .studio>.text{
+        font-size:0.7em;
+    }
+}
+@media(max-width:430px){
+    .studio>.title{
+        font-size:0.8em;
+    }
+    .studio>.text{
+        font-size:0.65em;
+    }
+}
+/* 婚紗店 背景圖位置調整 */
+@media(max-width:800px){
+    .studio{
+        background-position:50% 20%;
+    }
+}
+@media(max-width:430px){
+    .studio{
+        background-position:45% 20%;
+    }
+}
+/* 喜餅店 */
+.cake{
+    width:100%;height:650px;
+    text-align:center;
+}
+/* 喜餅店 高度 */
+@media(max-width:890px){
+    .cake{
+        height:730px;
+    }
+}
+@media(max-width:450px){
+    .cake{
+        height:650px;
+    }
+}
+/* 喜餅店 標題名字 */
+.cake>.titleName{
+    padding-top:100px;
+    margin-bottom:50px;
+}
+.cake>.titleName>a{
+    font-size:2em;color:#DB8F00;
+    opacity:0.6;
+    font-family:'Coda Caption', sans-serif;
+    letter-spacing:6px;
+    transition:color 0.5s;
+}
+.cake>.titleName>a:link{
+    text-decoration:none;
+}
+.cake>.titleName>a:hover{
+    cursor:pointer;
+    color:#003d79;
+}
+/* 喜餅店 文字大小 */
+@media(max-width:600px){
+    .cake>.titleName{
+        font-size:0.7em;
+    }
+    .cake>.text{
+        font-size:0.7em;
+    }
+}
+@media(max-width:400px){
+    .cake>.titleName{
+        font-size:0.6em;
+    }
+}
+/* 喜餅店 內文 */
+.cake>.text{
+    line-height:1.5em;
+    font-size:0.9em;
+    margin-bottom:50px;
+    color:#003d79;
+}
+/* 喜餅店 圖片 */
+.cake>.cakes{
+    margin:0px auto;
+}
+.cake>.cakes>.cakePic>img{
+    width:200px;
+}
+.mobile-cakes{
+    display:none;
+}
+/* 喜餅店 圖片調整 */
+@media(max-width:630px){
+    /* 標題名字 大小 */
+    .cake>.titleName{
+        font-size:0.9em;
+    }
+    .cake>.cakes{
+        display:none;
+    }
+    .mobile-cakes{
+        display:block;
+    }
+    .mobile-cakes>img{
+        width:30%;
+        margin-bottom:30px;
+    }
+}
+/* 表單 */
+.rsvpLast{
+    width:100%;height:250px;
+    background-color:darkgoldenrod;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.1em;
+}
+.rsvpLast>.word{
+    padding-top:60px;
+    line-height:1.3em;
+    letter-spacing:6px;
+}
+.rsvpLast>.action>a:link{
+    color:#000;
+    text-decoration:none;
+    font-size:1.2em;
+    border:5px solid #000;
+    padding:15px 30px;
+    font-weight:bold;
+}
+.rsvpLast>.action>a:visited{
+    color:#000;
+    text-decoration:none;
+    font-size:1.2em;
+    border:5px solid #000;
+    padding:15px 30px;
+    font-weight:bold;
+}
+.rsvpLast>.action>a:hover{
+    background-color:rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+/* 表單 字體大小調整 */
+@media(max-width:800px){
+    .rsvpLast{
+        font-size:0.8em;
+    }
+}
+@media(max-width:430px){
+    .rsvpLast{
+        font-size:0.7em;
+    }
+}
+/* 頁尾 */
+.footer{
+    width:100%;height:115px;
+    text-align:center;
+}
+.footer>.title{
+    padding-top:40px;
+    margin-bottom:15px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+.footer>.copyright{
+    font-size:0.8em;
+}
+/* footer 字體大小調整 */
+@media(max-width:800px){
+    .footer>.title{
+        font-size:0.8em;
+    }
+    .footer>.copyright{
+        font-size:0.5em;
+    }
+}
+@media(max-width:500px){
+    .footer>.title{
+        font-size:0.7em;
+    }
+    .footer>.copyright{
+        font-size:0.4em;
+    }
+}
+@media(max-width:500px){
+    .footer>.title{
+        font-size:0.6em;
+    }
+    .footer>.copyright{
+        font-size:0.1em;
+    }
+}

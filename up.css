@@ -1,0 +1,279 @@
+body{
+    margin:0px;
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#f5f5f5;
+}
+/* 首頁 */
+nav{
+    background-image:url("bg.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    height:700px;
+    opacity:0.9;
+}
+/* 首頁背景圖位置調整 */
+@media(max-width:800px){
+    nav{
+        background-position:70% 25%;
+    }
+}
+@media(max-width:500px){
+    nav{
+        background-position:80% 25%;
+    }
+}
+/* 首頁 menu */
+nav>.menu{
+    display:flex;
+    justify-content:center;
+}
+nav>.menu>.item{
+    margin:0px 20px;
+    padding-top:30px;
+    font-family:'Suez One', serif;
+    color:#0e2135;
+    text-shadow:1px 1px 0px #DEFFDE;
+    font-size:0.75em;
+    cursor:pointer;
+    transition:transform 0.5s;
+}
+nav>.menu>a:link{
+    text-decoration:none;
+    color:#0e2135;
+}
+nav>.menu>a:visited{
+    text-decoration:none;
+    color:#0e2135
+}
+nav>.menu>a:hover{
+    color:teal;
+    transform:scale(1.1,1.1);
+}
+/* mobile size 選單 (lines) */
+.lines-menu{
+    display:none;
+    justify-content:center;
+    cursor:pointer;
+    padding-top:60px;
+}
+.lines-menu>.lines>.line{
+    width:50px;height:2px;
+    background-color:#0e2135;
+    margin-bottom:5px;
+}
+/* mobile-menu */
+.mobile-menu{
+    position:fixed;
+    top:0px;left:0px;
+    width:100%;height:100%;
+    background-color:rgba(255,255,255,0.9);
+    display:none;
+}
+.mobile-menu>.mobile-item{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+    font-size:0.8em;
+    color:#0e2135;
+    cursor:pointer;
+}
+.mobile-menu>a:link{
+    text-decoration:none;
+    color:#0e2135;
+}
+.mobile-menu>a:visited{
+    text-decoration:none;
+    color:#0e2135;
+}
+.mobile-menu>.close{
+    position:fixed;
+    top:10px;right:10px;
+    cursor:pointer;
+}
+/* mobile size 選單 (lines) 顯示 */
+@media(max-width:950px){
+    nav>.menu{
+        display:none;
+    }
+    .lines-menu{
+        display:flex;
+    }
+}
+/* 首頁 文字 */
+nav>.main{
+    text-align:center;
+    margin-top:240px;color:#0e2135;
+}
+/* 首頁 文字 上間距 */
+@media(max-width:950px){
+    nav>.main{
+        margin-top:200px;
+    }
+}
+/* 首頁 標題 */
+nav>.main>.title{
+    font-size:4em;
+    letter-spacing:0.3em;
+    font-family:'Coda Caption', sans-serif;
+}
+/* 首頁 標題 大小 */
+@media(max-width:800px){
+    nav>.main>.title{
+        font-size:3em;
+    }
+}
+@media(max-width:500px){
+    nav>.main>.title{
+        font-size:2.5em;
+    }
+}
+@media(max-width:430px){
+    nav>.main>.title{
+        font-size:2.3em;
+    }
+}
+@media(max-width:400px){
+    nav>.main>.title{
+        font-size:1.9em;
+    }
+}
+/* 首頁 標題 &字元 */
+nav>.main>.title>.sym{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+/* 首頁 資訊 */
+nav>.main>.word{
+    font-family:'Cabin', sans-serif;
+    font-weight:bold;
+}
+nav>.main>.text{
+    word-spacing:0.5em;
+    font-size:0.9em;
+    margin-top:15px;
+    margin-bottom:60px;
+}
+/* 首頁 按鈕 */
+nav>.main>.action>a:link{
+    color:#0e2135;
+    text-decoration:none;
+    font-size:1.2em;
+    border:5px solid #0e2135;
+    padding:10px 80px;
+}
+nav>.main>.action>a:visited{
+    color:#0e2135;
+    text-decoration:none;
+    font-size:1.2em;
+    border:5px solid #0e2135;
+    padding:10px 80px;
+}
+nav>.main>.action>a:hover{
+    background-color:rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+/* our story */
+.story{
+    text-align:center;
+    margin:100px 0px;
+}
+/* our story 標題 */
+.story>.title{
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    font-size:2em;
+    font-weight:bold;
+    letter-spacing:0.5em;
+    margin-bottom:40px;
+}
+/* our story 次標題 */
+.story>.title-1{
+    font-weight:bold;
+    color:#c7c400;
+    letter-spacing:5px;
+    font-size:0.8em;
+    margin-bottom:40px;
+}
+/* our story 內文 */
+.story>.text{
+    line-height:1.3em;
+    font-size:0.9em;
+    color:#666;
+}
+/* our story 底線 */
+.story>.bottomLine{
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+.story>.bottomLine>.line{
+    width:70px;height:3px;
+    background-color:#000;
+} 
+/* our story 字體大小 */
+@media(max-width:560px){
+    .story>.text{
+        font-size:0.7em;
+        line-height:1.5em;
+    }
+}
+@media(max-width:430px){
+    .story>.title{
+        font-size:1.5em;
+    }
+    .story>.title-1{
+        font-size:0.6em;
+    }
+    .story>.text{
+        font-size:0.6em;
+    }
+}
+@media(max-width:360px){
+    .story>.title{
+        font-size:1.4em;
+    }
+    .story>.title-1{
+        font-size:0.5em;
+    }
+    .story>.text{
+        font-size:0.4em;
+        line-height:1.8em;
+    }
+}
+/* picture瀏覽 */
+.picture{
+    height:848px;
+    background-color:#DB8F00;
+}
+.picture>img{
+    width:100%;
+}
+/* 第1張照片 */
+.picture>.pic-1{
+    display:block;
+}
+/* 第2~10張照片 */
+.picture>.pics{
+    display:none;
+}
+/* picture 高度 */
+@media(max-width:1000px){
+    .picture{
+        height:670px;
+    }
+}
+@media(max-width:700px){
+    .picture{
+        height:500px;
+    }
+}
+@media(max-width:500px){
+    .picture{
+        height:400px;
+    }
+}
+@media(max-width:430px){
+    .picture{
+        height:350px;
+    }
+}

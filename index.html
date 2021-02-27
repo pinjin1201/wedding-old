@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+        <title>Wedding &#124 Ron & AMi</title>
+        <link rel="stylesheet" type="text/css" href="up.css" />
+        <link rel="stylesheet" type="text/css" href="down.css" />
+        <link rel="stylesheet" type="text/css" href="rsvp.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Coda+Caption:wght@800&family=Staatliches&family=Suez+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cabin&family=Coda+Caption:wght@800&family=Staatliches&family=Suez+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    </head>
+    <body onload="pic();">
+        <!-- home -->
+        <nav>
+            <div class="menu" id="home">
+                <a href="#home" class="item home">HOME</a>
+                <a href="#ourStory" class="item ourStory">OUR STORY</a>
+                <a href="#gallery" class="item gallery">GALLERY</a>
+                <a href="#wedding" class="item wedding">WEDDING</a>
+                <a href="#weddingStudio" class="item weddingStudio">WEDDING STUDIO</a>
+                <a href="#brideCake" class="item weddingBrideCake">WEDDING BRIDE CAKE</a>
+                <a href="#rsvpLast" class="item rsvp">RSVP</a>
+            </div>
+            <!-- mobile size 選單 (lines) -->
+            <div id="mobile-menu-trigger" class="lines-menu"  onclick="mobileMenu();">
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#home"  class="mobile-item" onclick="mobileClose();">HOME</a>
+                <a href="#ourStory" class="mobile-item" onclick="mobileClose();">OUR STORY</a>
+                <a href="#gallery" class="mobile-item" onclick="mobileClose();">GALLERY</a>
+                <a href="#mobile-wedding" class="mobile-item" onclick="mobileClose();">WEDDING</a>
+                <a href="#weddingStudio" class="mobile-item" onclick="mobileClose();">WEDDING STUDIO</a>
+                <a href="#brideCake" class="mobile-item" onclick="mobileClose();">WEDDING BRIDE CAKE</a>
+                <a href="#rsvpLast" class="mobile-item" onclick="mobileClose();">RSVP</a>
+                <div class="close" onclick="mobileClose();">X</div>
+            </div>
+            <div class="main">
+                <div class="title">RON<span class="sym">&</span>AMI</div>
+                <div class="word text">Nov 29, 2020, 12:00 PM &#124 Taipei</div>
+                <div class="word action">
+                    <a href="file:///C:/Users/JackHouse/Desktop/2-2/rsvp.html">
+                        <span class="btn">RSVP</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- our story -->
+        <div class="story" id="ourStory">
+            <div class="title">OUR STORY</div>
+            <div class="title-1">WE ARE GETTING MARRIED (:</div>
+            <div class="text">
+                We met in college, when I was living in a dormitory by myself, <br />
+                but I didn't know what was going on, you were <br />next door to me, 
+                two strangers, one day, you knocked at me, <br />borrowed my hair dryer, 
+                and everything started here... <br />
+                After four years of college, 
+                we became more and more <br />attached to each other.
+            </div>
+            <div class="bottomLine">
+                <span class="line"></span>
+            </div>
+        </div>
+        <!-- pictures -->
+        <div class="picture" id="gallery">
+            <img src="pic-1.jpg" class="pic-1" id="pic-1" />
+            <img src="pic-2.jpg" class="pic-2 pics" id="pic-2" />
+            <img src="pic-3.jpg" class="pic-3 pics" id="pic-3" />
+            <img src="pic-4.jpg" class="pic-4 pics" id="pic-4" />
+            <img src="pic-5.jpg" class="pic-5 pics" id="pic-5" />
+            <img src="pic-6.jpg" class="pic-6 pics" id="pic-6" />
+            <img src="pic-7.jpg" class="pic-7 pics" id="pic-7" />
+            <img src="pic-8.jpg" class="pic-8 pics" id="pic-8" />
+            <img src="pic-9.jpg" class="pic-9 pics" id="pic-9" />
+            <img src="pic-10.jpg" class="pic-10 pics" id="pic-10" />
+        </div>
+        <!-- 喜宴資訊 -->
+        <div class="information" id="wedding">
+            <div class="title">THE<br />WEDDING</div>
+            <div class="middleLine">
+                <span class="line"></span>
+            </div>
+            <div class="word action">
+                <a href="file:///C:/Users/JackHouse/Desktop/2-2/rsvp.html">
+                    RSVP
+                </a>
+            </div>
+            <div class="info">
+                <div class="word when">
+                    <div class="title">When</div>
+                    <div class="data">Nov 29, 2020, 12:00 PM</div>
+                </div>
+                <div class="word where">
+                    <div class="title">Where</div>
+                    <div class="data">North City, <br />
+                        North Of Taiwan, North Of Earth, <br />
+                        It's Our Country, Taiwan.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile size 喜宴資訊 -->
+        <div class="mobile-size" id="mobile-wedding">
+            <div class="mobile-size-infor">
+                <div class="mobile-information" id="mobile-wedding">
+                    <div class="mobile-title">THE<br />WEDDING</div>
+                    <div class="mobile-infor">
+                        <div class="mobile-when m-w">
+                            <div class="mobile-title">When</div>
+                            <div class="mobile-data">Nov 29, 2020, 12:00 PM</div>
+                        </div>
+                        <div class="mobile-middleLine">
+                            <div class="m-l">
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="mobile-where m-w">
+                            <div class="mobile-title">Where</div>
+                            <div class="mobile-data">North City, <br />
+                                North Of Taiwan, North Of Earth, <br />
+                                It's Our Country, Taiwan.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-action">
+                        <a href="file:///C:/Users/JackHouse/Desktop/2-2/rsvp.html">
+                            RSVP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 婚紗店 -->
+        <div class="studio" id="weddingStudio">
+            <div class="bigTitle">WEDDING<br />STUDIO</div>
+            <div class="title titleOne">LAFEE, WHO I AM</div>
+            <div class="text textOne">Underwater photography, 
+                Wedding dress, <br />Couple photos, Artistic photos, <br />
+                Family portrait, Pregnant woman, <br />Travel photography.
+            </div>
+            <div class="title titleTwo">ADDRESS, WHERE WE ARE</div>
+            <div class="text textTwo">No. 145, Sec. 2, Sanmin Rd., 
+                Central Dist., Taichung City 400, Taiwan (R.O.C.)<br />
+            Any time,Welcome to our company.</div>
+            <div class="word action">
+                <a href="https://www.lafee.com.tw/">
+                    View Web
+                </a>
+            </div>
+        </div>
+        <!-- 喜餅店 -->
+        <div class="cake" id="brideCake">
+            <div class="titleName">
+                <a href="https://www.deaf.com.tw/">
+                    AMAZING GRACE DEAF BAKERY
+                </a>
+            </div>
+            <div class="text">Except I can't hear you,<br />
+                Deaf people can do anything.
+            </div>
+            <div class="cakes">
+                <div class="cakePic cakeOne">
+                    <img src="cake-1.jpg" alt="cake" />
+                    <img src="cake-5.jpg" alt="cake" />
+                    <img src="cake-3.jpg" alt="cake" />
+                </div>
+                <div class="cakePic cakeTwo">
+                    <img src="cake-6.jpg" alt="cake" />
+                    <img src="cake-4.jpg" alt="cake" />
+                    <img src="cake-2.jpg" alt="cake" />
+                </div>
+            </div>
+            <!-- mobile size 喜餅店 -->
+            <div class="mobile-cakes">
+                <img src="cake-1.jpg" alt="cake" />
+                <img src="cake-5.jpg" alt="cake" />
+                <img src="cake-3.jpg" alt="cake" />
+                <img src="cake-6.jpg" alt="cake" />
+                <img src="cake-4.jpg" alt="cake" />
+                <img src="cake-2.jpg" alt="cake" />
+            </div>
+        </div>
+        <!-- 表單 -->
+        <div class="rsvpLast" id="rsvpLast">
+            <div class="word">WE'RE SO EXCITED<br />
+                TO CELEBRATE WITH YOU
+            </div>
+            <div class="word action">
+                <a href="file:///C:/Users/JackHouse/Desktop/2-2/rsvp.html">
+                    RSVP
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="title"># JINJINPINPIN</div>
+            <div class="copyright">&#169; 2021 By PinJin.
+                The design is referenced in Wix template.
+            </div>
+        </div>
+        <script src="wedding.js"></script>
+    </body>
+</html>
